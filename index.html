@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JustHome</title>
+
+  <!-- =====  Bootstrap CSS  ===== -->
+  <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+
+  <!-- =====  Custom CSS  ===== -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- =====  Font Awesome CSS  ===== -->
+  <link rel="stylesheet" href="assets/fonts/font-awesome/all.min.css">
+
+  <!-- =====  Favicon Image  ===== -->
+  <link rel="website icon" href="assets/images/Favicon.png">
+
+</head>
+
+<body>
+
+
+
+  <!-- =====  Start Header Section  ===== -->
+
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid align-items-center">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="logo-img" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0 mt-0 d-flex align-items-center">
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Listings
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">New Listing</a></li>
+                <li><a class="dropdown-item" href="#">Manage Listings</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Members
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Member List</a></li>
+                <li><a class="dropdown-item" href="#">Add Member</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Blog
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Latest Posts</a></li>
+                <li><a class="dropdown-item" href="#">Write Post</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Pages
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li><a class="dropdown-item" href="#">Services</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Contact</a>
+            </li>
+          </ul>
+
+          <div class="header-user d-flex align-items-center">
+            <img src="assets/images/call-icon.png" class="call-icon" alt="">
+            <p class="mb-0">+68 685 88666</p>
+            <div class="user-icon-div">
+              <img src="assets/images/user-icon.png" class="user-icon" alt="">
+            </div>
+            <button class="header-btn">Add Property</button>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =====  End Header Section  ===== -->
+
+
+
+  <!-- =====  Start Hero Section  ===== -->
+
+  <div class="hero-section">
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="hero-content d-flex flex-column align-items-center">
+          <div class="room-desc d-flex justify-content-center">
+            <p class="mb-0">5 Beds</p>
+            <p class="mb-0">2 Baths</p>
+            <p class="mb-0">180 sqft</p>
+          </div>
+          <h1 class="hero-title mb-0">Office Space at <br> Northwest</h1>
+          <p class="hero-price mb-0">$250<span>/month</span></p>
+          <button class="hero-btn"><span>View Details</span> <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center position-relative">
+    <div class="hero-filter-div d-flex">
+      <div class="keyword-div">
+        <p>Keyword</p>
+        <input type="text" placeholder="Enter Keyword">
+      </div>
+      <div class="status-div">
+        <p>Status</p>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            All Status
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#">Available</a></li>
+            <li><a class="dropdown-item" href="#">Sold</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="type-div">
+        <p>Type</p>
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            All Type
+          </button>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="#">Commercial</a></li>
+            <li><a class="dropdown-item" href="#">Residential</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="filter-div d-flex">
+        <button class="filter-btn"><img src="assets/images/filter-icon.png" class="filter-icon" alt="">Filter</button>
+        <button class="search-btn">Search</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====  End Hero Section  ===== -->
+
+
+
+  <!-- =====  Start Cities Property Section  ===== -->
+
+
+
+  <!-- =====  End Cities Property Section  ===== -->
+
+
+
+  <!-- =====  Bootstrap JS  ===== -->
+  <script src="assets/bootstrap/popper.min.js"></script>
+  <script src="assets/bootstrap/bootstrap.min.js"></script>
+
+
+
+  <!-- =====  Font Awesome JS  ===== -->
+  <script src="assets/fonts/font-awesome/all.min.js"></script>
+
+
+
+  <!-- =====  Custom JS  ===== -->
+  <script src="assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>
