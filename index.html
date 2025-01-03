@@ -32,7 +32,7 @@
         <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" class="logo-img" alt="Logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="fa-solid fa-bars"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -129,42 +129,44 @@
     </div>
   </div>
 
-  <div class="d-flex justify-content-center position-relative">
+  <!-- <div class="d-flex justify-content-center position-relative">
     <div class="hero-filter-div d-flex">
-      <div class="keyword-div">
-        <p>Keyword</p>
-        <input type="text" placeholder="Enter Keyword">
-      </div>
-      <div class="status-div">
-        <p>Status</p>
-        <div class="dropdown">
-          <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            All Status
-          </button>
-          <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="#">Available</a></li>
-            <li><a class="dropdown-item" href="#">Sold</a></li>
-          </ul>
+      <div class="row justify-content-between w-100">
+        <div class="col-lg-3 col-6 keyword-div">
+          <p>Keyword</p>
+          <input type="text" placeholder="Enter Keyword">
         </div>
-      </div>
-      <div class="type-div">
-        <p>Type</p>
-        <div class="dropdown">
-          <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            All Type
-          </button>
-          <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="#">Commercial</a></li>
-            <li><a class="dropdown-item" href="#">Residential</a></li>
-          </ul>
+        <div class="col-lg-3 col-6 status-div">
+          <p>Status</p>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              All Status
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Available</a></li>
+              <li><a class="dropdown-item" href="#">Sold</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="filter-div d-flex">
-        <button class="filter-btn"><img src="assets/images/filter-icon.png" class="filter-icon" alt="">Filter</button>
-        <button class="search-btn">Search</button>
+        <div class="col-lg-3 col-6 type-div">
+          <p>Type</p>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              All Type
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Commercial</a></li>
+              <li><a class="dropdown-item" href="#">Residential</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 filter-div d-flex">
+          <button class="filter-btn"><img src="assets/images/filter-icon.png" class="filter-icon" alt="">Filter</button>
+          <button class="search-btn">Search</button>
+        </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- =====  End Hero Section  ===== -->
 
@@ -172,7 +174,51 @@
 
   <!-- =====  Start Cities Property Section  ===== -->
 
-
+  <div class="cities-section">
+    <div class="container">
+      <div class="row cities-top">
+        <h3>Find Properties in These Cities</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="row cities-bottom mb-5 g-0">
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="cities-div new-york">
+            <img src="assets/images/new-york.jpg" class="new-york-img" alt="">
+            <h5>New York</h5>
+            <p>8 Properties</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="cities-div chicago">
+            <img src="assets/images/chicago.jpg" class="chicago-img" alt="">
+            <h5>Chicago</h5>
+            <p>2 Properties</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="cities-div los-angeles">
+            <img src="assets/images/los-angeles.jpg" class="los-angeles-img" alt="">
+            <h5>Los Angeles</h5>
+            <p>1 Properties</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="cities-div miami">
+            <img src="assets/images/miami.jpg" class="miami-img" alt="">
+            <h5>Miami</h5>
+            <p>2 Properties</p>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6">
+          <div class="cities-div florida">
+            <img src="assets/images/florida.jpg" class="florida-img" alt="">
+            <h5>Florida</h5>
+            <p>3 Properties</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- =====  End Cities Property Section  ===== -->
 
