@@ -43,11 +43,18 @@
 
 :root {
   --yellow-color: #E7C873;
+  --green-color: #1F4B43;
   --black2-color: #1A1A1A;
   --grey-color: #969696;
   --border-color: #FFFFFF12;
   --white-color: #fff;
   --black-color: #000;
+}
+
+
+
+body {
+  color: var(--black2-color);
 }
 
 
@@ -225,7 +232,6 @@ header {
 
 .hero-btn {
   background-color: var(--yellow-color);
-  color: var(--black-color);
   border: 1px solid var(--yellow-color);
   border-radius: 12px;
   padding: 12.75px 31px 13.25px;
@@ -389,26 +395,30 @@ header {
 
 /*=====  Start Cities Property Section  =====*/
 
-.cities-top h3 {
+.cities-section {
+  margin-top: 212px;
+}
+
+.cities-top h3,
+.work-top h3 {
   font-family: "Roboto-Medium";
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  margin-top: 212px;
-  color: var(--black-color);
   margin-bottom: 5px !important;
 }
 
-.cities-top p {
+.cities-top p,
+.work-top p {
   font-size: 17px;
   line-height: 32.3px;
   text-align: center;
-  color: var(--black-color);
   margin-bottom: 0 !important;
 }
 
 .cities-bottom {
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .cities-div {
@@ -473,7 +483,142 @@ header {
 
 
 
+/*=====  Start Work Section  =====*/
+
+.work-section {
+  margin-top: 145px;
+}
+
+.work-bottom {
+  margin-top: 40px;
+}
+
+.work-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.work-card-img {
+  height: 60px;
+  width: 60px;
+}
+
+.work-card h3 {
+  font-family: "Roboto-Medium";
+  font-size: 21px;
+  line-height: 25.2px;
+  text-align: center;
+  margin: 27px 0 15px;
+}
+
+.work-card p {
+  font-size: 15px;
+  line-height: 28.5px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/*=====  End Work Section  =====*/
+
+
+
+/*=====  Start Sign in Section  =====*/
+
+.sign-in-section {
+  margin-top: 175px;
+}
+
+.sign-in-section .container {
+  background-color: var(--green-color);
+  padding: 85px 150px;
+  border-radius: 16px;
+}
+
+.sign-in-content h3 {
+  color: var(--white-color);
+  font-family: "Roboto-Medium";
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.sign-in-content p {
+  color: var(--white-color);
+  font-size: 17px;
+  line-height: 32.3px;
+  margin-bottom: 0;
+}
+
+.sign-in-btn {
+  background-color: var(--yellow-color);
+  color: var(--green-color);
+  border-radius: 12px;
+  padding: 0 30px;
+  border: 2px solid transparent;
+  outline: none;
+  font-family: "Roboto-Medium";
+  font-size: 15px;
+  line-height: 54px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.5s;
+}
+
+.sign-in-btn:hover {
+  background-color: transparent;
+  border: 2px solid var(--yellow-color);
+  color: var(--yellow-color);
+}
+
+.sign-in-btn .fa-arrow-right {
+  color: var(--green-color);
+  font-size: 15px;
+  transition: all 0.5s;
+}
+
+.sign-in-btn:hover .fa-arrow-right {
+  color: var(--yellow-color);
+}
+
+/*=====  End Sign in Section  =====*/
+
+
+
 /* =====  Start Media Queries Section  ===== */
+
+@media only screen and (max-width: 1280px) {
+
+  .sign-in-section .container {
+    padding: 65px 150px;
+  }
+
+  .sign-in-content h3 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .sign-in-content p {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .sign-in-btn {
+    padding: 0 20px;
+    font-size: 14px;
+    line-height: 54px;
+  }
+
+  .sign-in-btn .fa-arrow-right {
+    font-size: 14px;
+  }
+
+  /*?  B - 1280px to 1400px   xl :- (Large Desktops)  ?*/
+}
 
 @media only screen and (max-width: 1200px) {
 
@@ -481,7 +626,15 @@ header {
     display: none !important;
   }
 
-  /*?  B - 1200px to 1400px   xl :- (Large Desktops)  ?*/
+  .btn-col {
+    padding: 0;
+  }
+
+  .sign-in-btn {
+    padding: 0 10px;
+  }
+
+  /*?  B - 1200px to 1280px   xl :- (Large Desktops)  ?*/
 }
 
 @media only screen and (max-width: 992px) {
@@ -509,17 +662,46 @@ header {
     padding: 10px !important;
   }
 
+  .sign-in-section .container {
+    padding: 60px 130px;
+  }
+
+  .btn-col {
+    justify-content: center !important;
+  }
+
+  .sign-in-btn {
+    width: 100%;
+    margin-top: 20px;
+  }
+
   /*?  B - 992px to 1200px   lg :- (Desktops, Laptops, Large Tablets)  ?*/
 }
 
 @media only screen and (max-width: 768px) {
 
-  .cities-top h3 {
+  .cities-top h3,
+  .work-top h3 {
     font-size: 35px;
   }
 
-  .cities-top p {
+  .cities-top p,
+  .work-top p {
     font-size: 14px;
+  }
+
+  .sign-in-section .container {
+    padding: 50px 70px;
+  }
+
+  .sign-in-content h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .sign-in-content p {
+    font-size: 14px;
+    line-height: 25px;
   }
 
   /*?  768px to 992px   md :- (Tablets and small desktops)  ?*/
@@ -545,12 +727,31 @@ header {
     padding: 12.75px 20px 13.25px;
   }
 
-  .cities-top h3 {
-    font-size: 25px;
-    line-height: 35px;
+  .work-card-img {
+    height: 50px;
+    width: 50px;
   }
 
-  .cities-top p {
+  .work-card h3 {
+    font-size: 18px;
+    line-height: 20px;
+    margin: 20px 0 10px;
+  }
+
+  .work-card p {
+    font-size: 13px;
+    line-height: 21px;
+  }
+
+  .sign-in-section .container {
+    padding: 30px 30px;
+  }
+
+  .sign-in-content h3 {
+    font-size: 22px;
+  }
+
+  .sign-in-content p {
     font-size: 12px;
   }
 
@@ -582,15 +783,6 @@ header {
   .user-icon {
     width: 12.95px;
     height: 13px;
-  }
-
-  .cities-top h3 {
-    font-size: 20px;
-    line-height: 25px;
-  }
-
-  .cities-top p {
-    font-size: 10px;
   }
 
   /*?  sm :- (Landscape and Portrait mobiles)  ?*/
