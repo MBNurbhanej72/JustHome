@@ -809,6 +809,64 @@ header {
 
 
 
+/*=====  Start Discover Section  =====*/
+
+.discover-section {
+  background-image: url(../images/discover-img.jpg);
+  background-size: 100% 100%;
+  margin-top: 165px;
+  width: 100%;
+  height: 750.78px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.discover-section h3 {
+  color: var(--white-color);
+  font-family: "Roboto-Medium";
+  font-size: 60px;
+  line-height: 78px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.discover-section p {
+  color: var(--white-color);
+  font-size: 16px;
+  line-height: 30.4px;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.discover-section button {
+  background-color: var(--yellow-color);
+  color: var(--black2-color);
+  padding: 0px 30px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Roboto-Medium";
+  font-size: 15px;
+  line-height: 54px;
+  outline: none;
+  border: 1.5px solid transparent;
+  transition: all 0.5s !important;
+}
+
+.discover-section button:hover {
+  background-color: transparent;
+  border: 1.5px solid var(--yellow-color);
+  color: var(--yellow-color);
+}
+
+/*=====  End Discover Section  =====*/
+
+
+
 /* =====  Start Media Queries Section  ===== */
 
 @media only screen and (max-width: 1280px) {
@@ -835,6 +893,10 @@ header {
 
   .sign-in-btn .fa-arrow-right {
     font-size: 14px;
+  }
+
+  .discover-section {
+    height: 469.78px;
   }
 
   /*?  B - 1280px to 1400px   xl :- (Large Desktops)  ?*/
@@ -931,6 +993,16 @@ header {
     padding: 4px 12px !important;
   }
 
+  .discover-section h3 {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .discover-section p {
+    font-size: 14px;
+    line-height: 30.4px;
+  }
+
   /*?  768px to 992px   md :- (Tablets and small desktops)  ?*/
 }
 
@@ -986,6 +1058,26 @@ header {
     gap: 30px;
   }
 
+  .discover-section {
+    background-size: cover;
+  }
+
+  .discover-section h3 {
+    font-size: 40px;
+    line-height: 58px;
+  }
+
+  .discover-section p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .discover-section button {
+    padding: 0px 20px;
+    font-size: 13px;
+    line-height: 44px;
+  }
+
   /*?  B - 576px to 768px   sm :- (Landscape and Portrait mobiles)  ?*/
 }
 
@@ -1025,14 +1117,39 @@ header {
     gap: 20px;
   }
 
+  .discover-section h3 {
+    font-size: 30px;
+    line-height: 48px;
+    margin-bottom: 0;
+  }
+
+  .discover-section p {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 15px 0;
+  }
+
+  .discover-section button {
+    padding: 0px 15px;
+    font-size: 12px;
+    line-height: 44px;
+  }
+
   /*?  sm :- (Landscape and Portrait mobiles)  ?*/
 }
 
 @media only screen and (max-width: 400px) {
+
   .home-price {
     bottom: 5px;
     font-size: 16px;
   }
+
+  .discover-section p {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
 }
 
 /* =====  End Media Queries Section  ===== */
