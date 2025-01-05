@@ -1089,6 +1089,50 @@ header {
   width: 13px;
 }
 
+.testimonial-bottom {
+  border-top: 1px solid #FFFFFF1F;
+  margin-top: 85px;
+  padding-top: 86px;
+}
+
+.testimonial-bottom p {
+  color: var(--white-color);
+  font-size: 17px;
+  line-height: 32.3px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.amazon-img {
+  Width: 84px;
+  Height: 26px;
+}
+
+.amd-img {
+  Width: 83px;
+  Height: 20px;
+}
+
+.cisco-img {
+  Width: 74px;
+  Height: 42px;
+}
+
+.dropcam-img {
+  Width: 122px;
+  Height: 24px;
+}
+
+.logitech-img {
+  Width: 82px;
+  Height: 25px;
+}
+
+.spotify-img {
+  Width: 99px;
+  Height: 30px;
+}
+
 /*=====  End Testimonial Section  =====*/
 
 
@@ -1299,6 +1343,10 @@ header {
     height: 300px;
   }
 
+  .testimonial-bottom-img {
+    margin-bottom: 25px;
+  }
+
   /*?  B - 992px to 1200px   lg :- (Desktops, Laptops, Large Tablets)  ?*/
 }
 
@@ -1396,6 +1444,14 @@ header {
     height: 260px;
   }
 
+  .testimonial-bottom p {
+    margin-bottom: 30px;
+  }
+
+  .testimonial-bottom-img {
+    margin-bottom: 35px;
+  }
+
   /*?  768px to 992px   md :- (Tablets and small desktops)  ?*/
 }
 
@@ -1487,6 +1543,15 @@ header {
 
   .real-estate-btn {
     margin-top: 20px;
+  }
+
+  .testimonial-bottom p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .testimonial-bottom-img {
+    margin-bottom: 45px;
   }
 
   /*?  B - 576px to 768px   sm :- (Landscape and Portrait mobiles)  ?*/
@@ -1593,6 +1658,12 @@ header {
 
   .swiper {
     height: 320px;
+  }
+
+
+  .testimonial-bottom p {
+    font-size: 12px;
+    line-height: 18px;
   }
 
 }
