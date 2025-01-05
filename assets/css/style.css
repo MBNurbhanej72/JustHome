@@ -932,6 +932,119 @@ header {
 
 
 
+/*=====  Start Testimonial Section  =====*/
+
+.testimonial-section {
+  margin-top: 165px;
+  padding: 165px 0 145px;
+  background-color: var(--black2-color);
+}
+
+.testimonial-counter {
+  display: flex;
+  gap: 67px;
+}
+
+.testimonial-heading {
+  color: var(--white-color);
+  font-family: "Roboto-Medium";
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 0;
+  padding-top: 63px;
+}
+
+.testimonial-counter h4 {
+  color: var(--white-color);
+  font-family: "Roboto-Medium";
+  font-size: 26px;
+  line-height: 33.8px;
+  margin: 19px 0 1px;
+}
+
+.testimonial-counter p {
+  color: var(--white-color);
+  font-size: 15px;
+  line-height: 37.5px;
+  margin-bottom: 0;
+}
+
+.testimonial-counter .fa-star {
+  color: var(--yellow-color);
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 38px 10px 15px;
+  background-color: transparent;
+}
+
+.profile {
+  align-items: center;
+  position: relative;
+}
+
+.profile-img {
+  width: 90px;
+  aspect-ratio: 1;
+  margin-right: 20px;
+}
+
+.profile h5 {
+  color: var(--white-color);
+  margin-bottom: 2px;
+  font-family: "Roboto-Medium";
+  font-size: 19px;
+  line-height: 22.8px;
+}
+
+.profile p {
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 28.5px;
+  color: var(--white-color);
+}
+
+.testimonial-desc {
+  color: var(--white-color);
+  font-family: "Roboto-Medium";
+  font-size: 19px;
+  line-height: 36.1px;
+  margin-top: 30px;
+}
+
+.q-1 {
+  height: 39px;
+  width: 39px;
+  position: absolute;
+  top: 3px;
+  right: 18px;
+}
+
+.q-2 {
+  height: 44px;
+  width: 45px;
+  position: absolute;
+  top: 18px;
+  right: 14.59px;
+  z-index: 1;
+}
+
+/*=====  End Testimonial Section  =====*/
+
+
+
 /** =====  Start Media Queries Section  ===== **/
 
 @media only screen and (max-width: 1280px) {

@@ -20,3 +20,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+
+var swiper = new Swiper(".testimonialSwiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
