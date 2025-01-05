@@ -185,7 +185,7 @@ header {
 
 .hero-section {
   background-image: url("../images/hero-img.jpg");
-  background-size: cover;
+  background-size: 100% 100%;
   height: 598px;
   position: relative;
 }
@@ -867,7 +867,72 @@ header {
 
 
 
-/* =====  Start Media Queries Section  ===== */
+/*=====  Start Real Estate Section  =====*/
+
+.real-estate-section {
+  margin-top: 165px;
+}
+
+.real-estate-content h3 {
+  font-family: "Roboto-Medium";
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 0;
+  padding-top: 55px;
+}
+
+.real-estate-content .desc {
+  font-size: 16px;
+  line-height: 30.4px;
+  margin: 20px 0 40px;
+}
+
+.counter h4 {
+  font-family: "Roboto-Medium";
+  font-size: 40px;
+  line-height: 72px;
+  margin-bottom: 0;
+}
+
+.counter p {
+  font-size: 15px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.real-estate-btn {
+  width: auto;
+  background-color: var(--yellow-color);
+  color: var(--black2-color);
+  border: 1.5px solid transparent;
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.5s;
+  padding: 0 30px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Roboto-Medium";
+  font-size: 15px;
+  line-height: 52px;
+}
+
+.real-estate-btn:hover {
+  background-color: transparent;
+  border: 1.5px solid var(--yellow-color);
+}
+
+.real-estate-img {
+  width: 100%;
+}
+
+/*=====  End Real Estate Section  =====*/
+
+
+
+/** =====  Start Media Queries Section  ===== **/
 
 @media only screen and (max-width: 1280px) {
 
@@ -899,6 +964,32 @@ header {
     height: 469.78px;
   }
 
+  .real-estate-content h3 {
+    font-size: 35px;
+    line-height: 50px;
+    padding-top: 40px;
+  }
+
+  .real-estate-content .desc {
+    font-size: 14px;
+    line-height: 28.4px;
+    margin: 15px 0 30px;
+  }
+
+  .counter h4 {
+    font-size: 35px;
+    line-height: 70px;
+  }
+
+  .counter p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .real-estate-btn {
+    margin-top: 30px;
+  }
+
   /*?  B - 1280px to 1400px   xl :- (Large Desktops)  ?*/
 }
 
@@ -921,10 +1012,22 @@ header {
 
 @media only screen and (max-width: 992px) {
 
-  .collapse.show {
+  .navbar {
+    background-color: transparent;
+    transition: all 0.5s ease;
+  }
+
+  .navbar-nav {
+    gap: 5px;
+  }
+
+  .navbar-collapse {
+    padding: 15px;
+  }
+
+  .navbar.open {
     background-color: var(--black2-color);
     opacity: 0.98;
-    padding: 15px;
   }
 
   .nav-link {
@@ -957,10 +1060,45 @@ header {
     margin-top: 20px;
   }
 
+  .home-price {
+    bottom: 8px;
+    right: 25px;
+  }
+
+  .real-estate-content h3 {
+    font-size: 25px;
+    line-height: 45px;
+    padding-top: 30px;
+  }
+
+  .real-estate-content .desc {
+    font-size: 14px;
+    line-height: 28.4px;
+    margin: 15px 0 25px;
+  }
+
+  .counter h4 {
+    font-size: 25px;
+    line-height: 50px;
+  }
+
+  .counter p {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .real-estate-btn {
+    margin-top: 20px;
+  }
+
   /*?  B - 992px to 1200px   lg :- (Desktops, Laptops, Large Tablets)  ?*/
 }
 
 @media only screen and (max-width: 768px) {
+
+  .hero-section {
+    background-size: cover;
+  }
 
   .cities-top h3,
   .work-top h3,
@@ -993,6 +1131,11 @@ header {
     padding: 4px 12px !important;
   }
 
+  .home-price {
+    bottom: 34px;
+    right: 30px;
+  }
+
   .discover-section h3 {
     font-size: 50px;
     line-height: 68px;
@@ -1001,6 +1144,29 @@ header {
   .discover-section p {
     font-size: 14px;
     line-height: 30.4px;
+  }
+
+  .real-estate-col-1 {
+    order: 1;
+  }
+
+  .real-estate-col-2 {
+    order: 0;
+  }
+
+  .real-estate-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .counter {
+    text-align: center;
+  }
+
+  .real-estate-btn {
+    margin-top: 30px;
   }
 
   /*?  768px to 992px   md :- (Tablets and small desktops)  ?*/
@@ -1078,6 +1244,24 @@ header {
     line-height: 44px;
   }
 
+  .real-estate-content h3 {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .real-estate-content .desc {
+    font-size: 16px;
+    line-height: 35px;
+  }
+
+  .counter {
+    margin-bottom: 15px;
+  }
+
+  .real-estate-btn {
+    margin-top: 20px;
+  }
+
   /*?  B - 576px to 768px   sm :- (Landscape and Portrait mobiles)  ?*/
 }
 
@@ -1135,6 +1319,11 @@ header {
     line-height: 44px;
   }
 
+  .real-estate-content .desc {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
   /*?  sm :- (Landscape and Portrait mobiles)  ?*/
 }
 
@@ -1152,7 +1341,7 @@ header {
 
 }
 
-/* =====  End Media Queries Section  ===== */
+/** =====  End Media Queries Section  ===== **/
 
 
 
