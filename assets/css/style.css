@@ -1215,6 +1215,136 @@ header {
 
 
 
+/*=====  Start App Section  =====*/
+
+.app-section {
+  margin-top: 130px;
+  margin-bottom: 15px;
+}
+
+.app-container {
+  background-color: var(--green-color);
+  border-radius: 16px;
+}
+
+.app-container .col-lg-7 {
+  padding-left: 86px;
+}
+
+.app-btn {
+  color: var(--white-color);
+  background-color: #FFFFFF1F;
+  border: 2px solid transparent;
+  outline: none;
+  border-radius: 36px;
+  margin-top: 160px;
+  margin-bottom: 20px;
+  padding: 0 25px;
+  font-size: 14px;
+  line-height: 36px;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.app-btn:hover {
+  border: 2px solid #FFFFFF1F;
+  background-color: transparent;
+}
+
+.app-heading {
+  color: var(--white-color);
+  font-family: "Roboto-Medium";
+  font-size: 32px;
+  line-height: 32px;
+}
+
+.app-desc {
+  color: var(--white-color);
+  font-size: 15px;
+  line-height: 28.5px;
+  margin: 20px 0 35px;
+}
+
+.main-app-div {
+  gap: 30px;
+}
+
+.app-store {
+  background-color: var(--white-color);
+  border-radius: 12px;
+  padding: 13px 38px 13px 25px;
+}
+
+.app-store-img {
+  width: 19px;
+  height: 24px;
+  margin-right: 15px;
+}
+
+.app-store div {
+  border-left: 1.5px solid #1F4B4352;
+  padding-left: 16px;
+}
+
+.app-store p {
+  margin-bottom: 0;
+  color: var(--green-color);
+  font-size: 13px;
+  line-height: 15.6px;
+}
+
+.app-store h5 {
+  margin-bottom: 0;
+  color: var(--green-color);
+  font-family: "Roboto-Medium";
+  font-size: 16px;
+  line-height: 19.2px;
+  margin-top: 3.2px;
+}
+
+.play-store {
+  background-color: var(--white-color);
+  border-radius: 12px;
+  padding: 13px 33px 13px 25px;
+}
+
+.play-store-img {
+  width: 20px;
+  height: 23px;
+  margin-right: 15px;
+}
+
+.play-store div {
+  border-left: 1.5px solid #1F4B4352;
+  padding-left: 16px;
+}
+
+.play-store p {
+  margin-bottom: 0;
+  color: var(--green-color);
+  font-size: 13px;
+  line-height: 15.6px;
+}
+
+.play-store h5 {
+  margin-bottom: 0;
+  color: var(--green-color);
+  font-family: "Roboto-Medium";
+  font-size: 16px;
+  line-height: 19.2px;
+  margin-top: 3.2px;
+}
+
+.app-img {
+  width: 100%;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+/*=====  End App Section  =====*/
+
+
+
 /** =====  Start Media Queries Section  ===== **/
 
 @media only screen and (max-width: 1280px) {
@@ -1287,6 +1417,10 @@ header {
     left: 99px !important;
   }
 
+  .app-btn {
+    margin-top: 120px;
+  }
+
   /*?  B - 1280px to 1400px   xl :- (Large Desktops)  ?*/
 }
 
@@ -1307,6 +1441,14 @@ header {
   .testimonial-desc {
     font-size: 16px;
     line-height: 32.1px;
+  }
+
+  .app-container .col-lg-7 {
+    padding-left: 50px;
+  }
+
+  .app-btn {
+    margin-top: 90px;
   }
 
   /*?  B - 1200px to 1280px   xl :- (Large Desktops)  ?*/
@@ -1423,6 +1565,23 @@ header {
 
   .testimonial-bottom-img {
     margin-bottom: 25px;
+  }
+
+  .app-container .col-lg-7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 12px;
+  }
+
+  .app-desc {
+    text-align: center;
+  }
+
+  .app-img {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
   }
 
   /*?  B - 992px to 1200px   lg :- (Desktops, Laptops, Large Tablets)  ?*/
@@ -1634,6 +1793,48 @@ header {
     margin-bottom: 45px;
   }
 
+  .app-btn {
+    font-size: 14px;
+    line-height: 36px;
+    margin-top: 60px;
+  }
+
+  .app-heading {
+    font-size: 27px;
+    line-height: 21px;
+  }
+
+  .app-desc {
+    font-size: 12px;
+    line-height: 21px;
+  }
+
+  .main-app-div {
+    gap: 15px;
+  }
+
+  .app-store {
+    padding: 15px 30px 15px 20px;
+  }
+
+  .app-store p,
+  .play-store p {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .app-store h5,
+  .play-store h5 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .play-store {
+    background-color: var(--white-color);
+    border-radius: 12px;
+    padding: 15px 28px 15px 20px;
+  }
+
   /*?  B - 576px to 768px   sm :- (Landscape and Portrait mobiles)  ?*/
 }
 
@@ -1717,6 +1918,19 @@ header {
   .article-news-card-btn {
     font-size: 13px;
     line-height: 21px;
+  }
+
+  .app-btn {
+    margin-bottom: 25px;
+  }
+
+  .responsive-br {
+    display: none;
+  }
+
+  .main-app-div {
+    gap: 15px;
+    flex-direction: column;
   }
 
   /*?  sm :- (Landscape and Portrait mobiles)  ?*/
