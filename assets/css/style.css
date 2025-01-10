@@ -259,7 +259,7 @@ header {
 
 .keyword-div {
   border-right: 1px solid var(--border-color);
-  /* padding-right: 30px; */
+  padding-right: 30px;
 }
 
 .keyword-div p {
@@ -312,7 +312,6 @@ header {
 }
 
 .type-div {
-  /* padding: 0 52px 0 30px; */
   padding-left: 30px;
   padding-right: 0;
 }
@@ -1574,6 +1573,28 @@ input::placeholder {
     display: none !important;
   }
 
+  .hero-filter-div {
+    padding: 20px 50px 20px 20px;
+  }
+
+  .keyword-div {
+    border-right: 1px solid var(--border-color);
+    padding-right: 0;
+  }
+
+  .status-div {
+    padding: 0;
+  }
+
+  .type-div {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .filter-div {
+    padding-left: 0;
+  }
+
   .btn-col {
     padding: 0;
   }
@@ -1625,6 +1646,44 @@ input::placeholder {
   .header-user {
     display: flex !important;
     justify-content: center;
+  }
+
+  .hero-filter-div {
+    padding: 20px;
+    bottom: -80px;
+  }
+
+  .keyword-div input {
+    width: 95%;
+  }
+
+  .filter-main-div {
+    padding: 0;
+    margin-top: 20px;
+    padding-left: 30px;
+  }
+
+  .status-div {
+    border: none;
+    padding-left: 30px;
+  }
+
+  .status-div .dropdown {
+    width: 95%;
+  }
+
+  .type-div {
+    margin-top: 20px;
+    border-right: 1px solid var(--border-color);
+  }
+
+  .type-div .dropdown {
+    width: 95%;
+  }
+
+  .filter-div {
+    justify-content: start !important;
+    gap: 20px;
   }
 
   .cities-bottom {
@@ -1754,6 +1813,25 @@ input::placeholder {
 
   .hero-section {
     background-size: cover;
+  }
+
+  .hero-filter-div {
+    padding: 20px 10px;
+  }
+
+  .filter-main-div {
+    padding: 0;
+    margin-top: 20px;
+    padding-left: 15px;
+  }
+
+  .filter-div {
+    gap: 10px;
+  }
+
+  .status-div {
+    border: none;
+    padding-left: 15px;
   }
 
   .cities-top h3,
@@ -1888,6 +1966,60 @@ input::placeholder {
 
 @media only screen and (max-width: 576px) {
 
+  .hero-section .container {
+    top: 43%;
+  }
+
+  .hero-title {
+    margin: 10px 0 5px !important;
+    line-height: 50px;
+  }
+
+  .hero-filter-div {
+    width: 70%;
+    bottom: -130px;
+    padding: 20px;
+  }
+
+  .hero-btn {
+    margin-top: 15px;
+  }
+
+  .keyword-div {
+    border: none;
+  }
+
+  .keyword-div input {
+    width: 90%;
+  }
+
+  .status-div {
+    padding-left: 0;
+    margin-top: 10px;
+  }
+
+  .status-div .dropdown {
+    width: 90%;
+  }
+
+  .type-div {
+    padding-left: 0;
+    margin-top: 10px;
+    border: none;
+  }
+
+  .type-div .dropdown {
+    width: 90%;
+  }
+
+  .filter-main-div {
+    padding: 0;
+  }
+
+  .filter-div {
+    justify-content: space-evenly !important;
+  }
+
   .cities-section {
     margin-top: 170px;
   }
@@ -1898,7 +2030,6 @@ input::placeholder {
 
   .hero-title {
     font-size: 40px;
-    margin: 20.15px 0 31.97px !important;
   }
 
   .hero-price {
@@ -1907,7 +2038,6 @@ input::placeholder {
 
   .hero-price span {
     font-size: 14px;
-    padding: 12.75px 20px 13.25px;
   }
 
   .work-section {
@@ -2177,6 +2307,18 @@ input::placeholder {
 }
 
 @media only screen and (max-width: 400px) {
+
+  .keyword-div input::placeholder {
+    text-align: center !important;
+  }
+
+  .filter-btn {
+    padding: 5px 15px;
+  }
+
+  .search-btn {
+    padding: 5px 15px;
+  }
 
   .home-price {
     bottom: 5px;
