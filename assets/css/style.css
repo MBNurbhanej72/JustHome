@@ -396,7 +396,7 @@ header {
 /*=====  Start Cities Property Section  =====*/
 
 .cities-section {
-  margin-top: 212px;
+  margin-top: 150px;
 }
 
 .cities-top h3,
@@ -490,7 +490,7 @@ header {
 /*=====  Start Work Section  =====*/
 
 .work-section {
-  margin-top: 145px;
+  margin-top: 80px;
 }
 
 .work-bottom {
@@ -531,7 +531,7 @@ header {
 /*=====  Start Sign in Section  =====*/
 
 .sign-in-section {
-  margin-top: 175px;
+  margin-top: 70px;
 }
 
 .sign-in-section .container {
@@ -596,7 +596,7 @@ header {
 /*=====  Start Feature Property Section  =====*/
 
 .feature-property-section {
-  margin-top: 165px;
+  margin-top: 80px;
 }
 
 .feature-bottom {
@@ -815,7 +815,7 @@ header {
 .discover-section {
   background-image: url(../images/discover-img.jpg);
   background-size: 100% 100%;
-  margin-top: 165px;
+  margin-top: 80px;
   width: 100%;
   height: 750.78px;
   display: flex;
@@ -871,7 +871,7 @@ header {
 /*=====  Start Real Estate Section  =====*/
 
 .real-estate-section {
-  margin-top: 165px;
+  margin-top: 80px;
 }
 
 .real-estate-content h3 {
@@ -936,7 +936,7 @@ header {
 /*=====  Start Testimonial Section  =====*/
 
 .testimonial-section {
-  margin-top: 165px;
+  margin-top: 80px;
   padding: 165px 0 130px;
   background-color: var(--black2-color);
 }
@@ -1092,8 +1092,8 @@ header {
 
 .testimonial-bottom {
   border-top: 1px solid #FFFFFF1F;
-  margin-top: 85px;
-  padding-top: 86px;
+  margin-top: 40px;
+  padding-top: 50px;
 }
 
 .testimonial-bottom p {
@@ -1141,7 +1141,7 @@ header {
 /*=====  Start Article & News Section  =====*/
 
 .article-news-section {
-  margin-top: 165px;
+  margin-top: 80px;
 }
 
 .article-news-bottom {
@@ -1217,7 +1217,7 @@ header {
 /*=====  Start App Section  =====*/
 
 .app-section {
-  margin-top: 130px;
+  margin-top: 70px;
   margin-bottom: 15px;
 }
 
